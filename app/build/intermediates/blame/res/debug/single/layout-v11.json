@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Android\\.android\\build-cache\\dd5acac6f2e7d2847ecbc922814e41c1a3d69fb1\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Android\\.android\\build-cache\\dd5acac6f2e7d2847ecbc922814e41c1a3d69fb1\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Android\\.android\\build-cache\\dd5acac6f2e7d2847ecbc922814e41c1a3d69fb1\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Android\\.android\\build-cache\\dd5acac6f2e7d2847ecbc922814e41c1a3d69fb1\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Android\\.android\\build-cache\\dd5acac6f2e7d2847ecbc922814e41c1a3d69fb1\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Android\\.android\\build-cache\\dd5acac6f2e7d2847ecbc922814e41c1a3d69fb1\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Android\\.android\\build-cache\\dd5acac6f2e7d2847ecbc922814e41c1a3d69fb1\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Android\\.android\\build-cache\\dd5acac6f2e7d2847ecbc922814e41c1a3d69fb1\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Android\\.android\\build-cache\\dd5acac6f2e7d2847ecbc922814e41c1a3d69fb1\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
+        "source": "C:\\Android\\.android\\build-cache\\8161651af9eb6e469dd2947a29116aa9bc9fefd1\\output\\res\\layout-v21\\place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Android\\.android\\build-cache\\dd5acac6f2e7d2847ecbc922814e41c1a3d69fb1\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    }
+]

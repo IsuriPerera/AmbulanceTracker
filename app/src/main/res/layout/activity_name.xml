@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="@drawable/texturerepeat">
+
+    <!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:fitsSystemWindows="true"-->
+        <!--tools:context="com.clay.pickthebus.pickthebus.NameActivity">-->
+
+
+    <!--</android.support.design.widget.CoordinatorLayout>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logintext"
+        android:id="@+id/textView4"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#e1e1e1" />
+
+    <EditText
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etID"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:hint="@string/etID"
+        android:backgroundTint="#e1e1e1"
+        android:textColorHint="#818080"
+        android:textColor="#e1e1e1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnDone"
+        android:id="@+id/btnDone"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="13dp"
+        android:backgroundTint="#fffde3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notregisteredtext"
+        android:id="@+id/textView3"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="#e1e1e1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registerButton"
+        android:id="@+id/registerButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickRegister"
+        android:backgroundTint="#fffde3" />
+
+</LinearLayout>
+
+
+
