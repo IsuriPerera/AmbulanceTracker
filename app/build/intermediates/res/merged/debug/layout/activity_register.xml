@@ -17,8 +17,6 @@
         android:text="@string/ambulanceservicenametextview"
         android:id="@+id/textView5"
         android:layout_above="@+id/busroutetxt"
-        android:layout_toLeftOf="@+id/regbusbtn"
-        android:layout_toStartOf="@+id/regbusbtn"
         android:textColor="#e1e1e1" />
 
     <TextView

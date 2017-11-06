@@ -1231,8 +1231,8 @@ int id blurred_background_image_view 0x7f0f00d8
 int id book_now 0x7f0f007b
 int id bottom 0x7f0f0034
 int id btnDone 0x7f0f00cb
-int id busdesctxt 0x7f0f00d3
-int id busnametxt 0x7f0f00d4
+int id busdesctxt 0x7f0f00d2
+int id busnametxt 0x7f0f00d3
 int id busroutetxt 0x7f0f00cf
 int id button 0x7f0f00ee
 int id buttonPanel 0x7f0f0096
@@ -1409,7 +1409,7 @@ int id progressBar 0x7f0f00f4
 int id progress_circular 0x7f0f0014
 int id progress_horizontal 0x7f0f0015
 int id radio 0x7f0f00a8
-int id regbusbtn 0x7f0f00d0
+int id regbusbtn 0x7f0f00d4
 int id registerButton 0x7f0f00cd
 int id rfc822 0x7f0f0065
 int id right 0x7f0f003b
@@ -1476,8 +1476,8 @@ int id textView2 0x7f0f00c1
 int id textView3 0x7f0f00cc
 int id textView4 0x7f0f00c9
 int id textView5 0x7f0f00ce
-int id textView6 0x7f0f00d1
-int id textView7 0x7f0f00d2
+int id textView6 0x7f0f00d0
+int id textView7 0x7f0f00d1
 int id textView8 0x7f0f00d5
 int id textView9 0x7f0f00c2
 int id textViewDetails 0x7f0f00c8

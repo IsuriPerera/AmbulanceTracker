@@ -4023,8 +4023,8 @@ containing a value of this type.
         public static final int book_now=0x7f0f007b;
         public static final int bottom=0x7f0f0034;
         public static final int btnDone=0x7f0f00cb;
-        public static final int busdesctxt=0x7f0f00d3;
-        public static final int busnametxt=0x7f0f00d4;
+        public static final int busdesctxt=0x7f0f00d2;
+        public static final int busnametxt=0x7f0f00d3;
         public static final int busroutetxt=0x7f0f00cf;
         public static final int button=0x7f0f00ee;
         public static final int buttonPanel=0x7f0f0096;
@@ -4201,7 +4201,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f0f0014;
         public static final int progress_horizontal=0x7f0f0015;
         public static final int radio=0x7f0f00a8;
-        public static final int regbusbtn=0x7f0f00d0;
+        public static final int regbusbtn=0x7f0f00d4;
         public static final int registerButton=0x7f0f00cd;
         public static final int rfc822=0x7f0f0065;
         public static final int right=0x7f0f003b;
@@ -4268,8 +4268,8 @@ containing a value of this type.
         public static final int textView3=0x7f0f00cc;
         public static final int textView4=0x7f0f00c9;
         public static final int textView5=0x7f0f00ce;
-        public static final int textView6=0x7f0f00d1;
-        public static final int textView7=0x7f0f00d2;
+        public static final int textView6=0x7f0f00d0;
+        public static final int textView7=0x7f0f00d1;
         public static final int textView8=0x7f0f00d5;
         public static final int textView9=0x7f0f00c2;
         public static final int textViewDetails=0x7f0f00c8;

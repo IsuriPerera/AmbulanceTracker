@@ -20,12 +20,12 @@
         "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_19_dark.png"
     },
     {
-        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connected_14_light.png",
-        "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_14_light.png"
-    },
-    {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connecting_16_light.png",
         "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_16_light.png"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connected_14_light.png",
+        "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_14_light.png"
     },
     {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
@@ -92,12 +92,12 @@
         "source": "C:\\Android\\.android\\build-cache\\97245e47643390ec4b39b44117c66faf7ae0cbbb\\output\\res\\drawable-xhdpi-v4\\cast_ic_notification_0.png"
     },
     {
-        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connected_14_dark.png",
-        "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_14_dark.png"
-    },
-    {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png",
         "source": "C:\\Android\\.android\\build-cache\\dd5acac6f2e7d2847ecbc922814e41c1a3d69fb1\\output\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connected_14_dark.png",
+        "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_14_dark.png"
     },
     {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
@@ -112,12 +112,12 @@
         "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_22_dark.png"
     },
     {
-        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connected_05_light.png",
-        "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_05_light.png"
-    },
-    {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connecting_05_light.png",
         "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_05_light.png"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connected_05_light.png",
+        "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_05_light.png"
     },
     {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connecting_15_light.png",
@@ -132,12 +132,12 @@
         "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_09_dark.png"
     },
     {
-        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connected_15_light.png",
-        "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_15_light.png"
-    },
-    {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png",
         "source": "C:\\Android\\.android\\build-cache\\553ea1fe72e6e12211ee440423e2a9148cc2aeaf\\output\\res\\drawable-xhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connected_15_light.png",
+        "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_15_light.png"
     },
     {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connected_07_dark.png",
@@ -220,12 +220,12 @@
         "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xhdpi-v4\\ic_vol_type_speaker_group_light.png"
     },
     {
-        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connected_12_dark.png",
-        "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_12_dark.png"
-    },
-    {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
         "source": "C:\\Android\\.android\\build-cache\\dd5acac6f2e7d2847ecbc922814e41c1a3d69fb1\\output\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connected_12_dark.png",
+        "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_12_dark.png"
     },
     {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\quantum_ic_bigtop_updates_white_24.png",

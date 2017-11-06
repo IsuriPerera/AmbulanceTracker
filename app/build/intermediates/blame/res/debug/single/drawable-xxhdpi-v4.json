@@ -24,12 +24,12 @@
         "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_17_light.png"
     },
     {
-        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_closed_caption_grey600_36.png",
-        "source": "C:\\Android\\.android\\build-cache\\553ea1fe72e6e12211ee440423e2a9148cc2aeaf\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_closed_caption_grey600_36.png"
-    },
-    {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\powered_by_google_dark.png",
         "source": "C:\\Android\\.android\\build-cache\\8161651af9eb6e469dd2947a29116aa9bc9fefd1\\output\\res\\drawable-xxhdpi-v4\\powered_by_google_dark.png"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_closed_caption_grey600_36.png",
+        "source": "C:\\Android\\.android\\build-cache\\553ea1fe72e6e12211ee440423e2a9148cc2aeaf\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_closed_caption_grey600_36.png"
     },
     {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_cast_connected_white_24.png",
@@ -44,12 +44,12 @@
         "source": "C:\\Android\\.android\\build-cache\\553ea1fe72e6e12211ee440423e2a9148cc2aeaf\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_white_24.png"
     },
     {
-        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
-        "source": "C:\\Android\\.android\\build-cache\\dd5acac6f2e7d2847ecbc922814e41c1a3d69fb1\\output\\res\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
-    },
-    {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_disconnected_dark.png",
         "source": "C:\\Android\\.android\\build-cache\\4944986d63db2b6094a24f1d09c9ed3df50d6883\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_disconnected_dark.png"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "C:\\Android\\.android\\build-cache\\dd5acac6f2e7d2847ecbc922814e41c1a3d69fb1\\output\\res\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_stop_white_24.png",
