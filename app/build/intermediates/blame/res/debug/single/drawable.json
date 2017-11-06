@@ -32,12 +32,12 @@
         "source": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\src\\main\\res\\drawable\\imagepickthebus.png"
     },
     {
-        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_normal.xml",
-        "source": "C:\\Android\\.android\\build-cache\\3cf4d6bdebd8d1e1305912d0f8e10be58e58afda\\output\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
-    },
-    {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_small_icon.xml",
         "source": "C:\\Android\\.android\\build-cache\\553ea1fe72e6e12211ee440423e2a9148cc2aeaf\\output\\res\\drawable\\cast_ic_notification_small_icon.xml"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_normal.xml",
+        "source": "C:\\Android\\.android\\build-cache\\3cf4d6bdebd8d1e1305912d0f8e10be58e58afda\\output\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
     },
     {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_vol_type_audiotrack_dark.xml",
@@ -56,12 +56,12 @@
         "source": "C:\\Android\\.android\\build-cache\\97245e47643390ec4b39b44117c66faf7ae0cbbb\\output\\res\\drawable\\cast_ic_notification_connecting.xml"
     },
     {
-        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\texture.png",
-        "source": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\src\\main\\res\\drawable\\texture.png"
-    },
-    {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_play.xml",
         "source": "C:\\Android\\.android\\build-cache\\553ea1fe72e6e12211ee440423e2a9148cc2aeaf\\output\\res\\drawable\\cast_ic_expanded_controller_play.xml"
+    },
+    {
+        "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\texture.png",
+        "source": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\src\\main\\res\\drawable\\texture.png"
     },
     {
         "merged": "D:\\Ambulance Tracker\\Ambulance Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_closed_caption.xml",

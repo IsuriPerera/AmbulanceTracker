@@ -971,7 +971,7 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="copyright">All Right Reserved © 2017</string>
-    <string name="developedby">Developed By : Isuri Perera \n \n FAQ: \n My location not shown? \n Enable Location permission from the application settings \n \n I cannot call a number? \n Enable Phone permission from the application settings</string>
+    <string name="developedby">Developed By : Isuri Perera \n \nFAQ: \nMy location not shown? \nEnable Location permission from the application settings. \nI cannot call a number? \nEnable Phone permission from the application settings.</string>
     <string name="etID">Enter ID</string>
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false"> AIzaSyAu1rRi8o23DNAVLadvzCj-L-sNRbbacS4 </string>
