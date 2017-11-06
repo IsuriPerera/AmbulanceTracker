@@ -128,7 +128,7 @@ public class NameActivity extends AppCompatActivity {
                                         Intent intent = new Intent(NameActivity.this, MapsActivity.class); //Passing data to MapsActivity
                                         intent.putExtra("Username", "["+busnamejson + " / " + busroutejson+"]");
                                         intent.putExtra("UserID", String.valueOf(busidjson));
-                                        intent.putExtra("UserDetails","Your ID : "+busidjson+"\nBus Destinations : "+busnamejson+"\nRoute : "+busroutejson+"\nDescription : "+busdescjson);
+                                        intent.putExtra("UserDetails","Your ID : "+busidjson+"\nName : "+busnamejson+"\nTelephone : "+busroutejson+"\nDescription : "+busdescjson);
                                         intent.putExtra("IsPassenger",false);
                                         startActivity(intent);
 

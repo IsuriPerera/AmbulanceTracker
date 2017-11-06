@@ -8,17 +8,6 @@
     android:orientation="vertical"
     android:background="@drawable/texturerepeat">
 
-    <!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
-        <!--xmlns:tools="http://schemas.android.com/tools"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:fitsSystemWindows="true"-->
-        <!--tools:context="com.clay.pickthebus.pickthebus.NameActivity">-->
-
-
-    <!--</android.support.design.widget.CoordinatorLayout>-->
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,34 +31,38 @@
         android:textColor="#e1e1e1" />
 
     <Button
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnDone"
         android:id="@+id/btnDone"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="13dp"
-        android:backgroundTint="#fffde3" />
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="15dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/notregisteredtext"
         android:id="@+id/textView3"
+        android:layout_gravity="center"
         android:layout_marginTop="80dp"
-        android:layout_marginLeft="25dp"
         android:textColor="#e1e1e1" />
 
     <Button
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/registerButton"
         android:id="@+id/registerButton"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:onClick="onClickRegister"
-        android:backgroundTint="#fffde3" />
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:onClick="onClickRegister" />
 
 </LinearLayout>
 

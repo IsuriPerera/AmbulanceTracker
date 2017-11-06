@@ -2,12 +2,16 @@ package com.isuri.ambulancetracker.apptracker;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.support.v4.app.ActivityCompat;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.TextView;
@@ -66,6 +70,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     boolean passenger = true;
 
+    private Marker marker;
+    TextView tvDetails;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,10 +84,10 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             userName = getIntent().getStringExtra("Username");
             userID = getIntent().getStringExtra("UserID");
 
-            TextView tvDetails = (TextView) findViewById(com.isuri.ambulancetracker.apptracker.R.id.textViewDetails);
+            tvDetails = (TextView) findViewById(com.isuri.ambulancetracker.apptracker.R.id.textViewDetails);
             tvDetails.setText(getIntent().getStringExtra("UserDetails"));
         } else {
-            TextView tvDetails = (TextView) findViewById(com.isuri.ambulancetracker.apptracker.R.id.textViewDetails);
+            tvDetails = (TextView) findViewById(com.isuri.ambulancetracker.apptracker.R.id.textViewDetails);
             tvDetails.setText(com.isuri.ambulancetracker.apptracker.R.string.passengerHint);
         }
 
@@ -100,15 +106,12 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             //                                          int[] grantResults)
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
-            Toast.makeText(this, "error perm 1", Toast.LENGTH_LONG);
+            Toast.makeText(this, "Error! restart the app", Toast.LENGTH_LONG);
             return;
         }
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 1, this);
 
 //        mMap = ((SupportMapFragment) ((SupportMapFragment) getSupportFragmentManager().findFragmentById(com.isuri.ambulancetracker.apptracker.R.id.map))).getMapAsync();
-
-
-
 
 
         //To get the last known position
@@ -127,21 +130,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         try {
             pubnub.subscribe("android_club", new Callback() {
                 public void successCallback(String channel, Object message) {
-                    // this will be called each time, when android_club subsriber get message
-                    //showMessage(message.toString());
-//                    String JSON_STRING=message.toString();
-                    Log.w("getJsonmsg", message.toString());
-//                    try{
-//                        JSONObject emp=(new JSONObject(JSON_STRING)).getJSONObject("Employee");
-//                        int empid = emp.getInt("id");
-//                        String empname=emp.getString("name");
-//                        int empsalary=emp.getInt("salary");
-//
-//                        String str="Employee ID:"+empid+"\nEmployee Name:"+empname+"\n"+"Employee Salary:"+empsalary;
-//                        showMessage(str);
-//
-//                    }catch (Exception e) {e.printStackTrace();}
-
 
                     if (message instanceof JSONObject) {
                         JSONObject json = (JSONObject) message;
@@ -153,7 +141,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                             localuserLongitude = emp.getDouble("userLongitude");
 
                             String str = "user ID:" + localUserID + "\nusr Name:" + localUsername + "\n" + "user lat:" + localuserLatitude + "\n" + "user long:" + localuserLongitude;
-                            //String str="Employee Name:"+empname;
+
                             showMessage(str);
 
                         } catch (Exception e) {
@@ -175,30 +163,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             e.printStackTrace();
         }
 
-        // button to send message
-//        Button bSend = (Button) findViewById(R.id.bSend);
-//        bSend.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Callback callback = new Callback() {
-//                    public void successCallback(String channel, Object response) {
-//                    }
-//                    public void errorCallback(String channel, PubnubError error) {
-//                    }
-//                };
-//
-//
-//                // Okey, let's publish(send) message
-//                JSONObject ff = null;
-//                try {
-//                    ff = new JSONObject(jsonObject);
-//                }catch (JSONException e){
-//                    e.printStackTrace();
-//                }
-//                pubnub.publish("android_club", ff, callback);
-//            }
-//        });
-
         /////////////////////////////////////end of pubnub///////////////////////////////////
 
 
@@ -211,15 +175,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
                 locationMessage.append(message);
                 locationMessage.append("\n\n");
-//
-//                // let's set all text to text view
-//                TextView tvMessages = (TextView) findViewById(R.id.tvMessages);
-//                // yes, each time!
-//                tvMessages.setText(locationMessage.toString());
-//
-//                // let's scroll to down, down, down......
-//                ScrollView svMessages = (ScrollView) findViewById(R.id.svMessages);
-//                svMessages.fullScroll(View.FOCUS_DOWN);
 
                 LatLng newUserLoc = new LatLng(localuserLatitude, localuserLongitude);
 //                mMap.addMarker(new MarkerOptions().position(newUserLoc).title(userName));
@@ -231,24 +186,72 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
                 for (Marker m : list) {
                     if (m.getTitle().equals(localUserID + " " + localUsername)) {
-                        // do something with the marker
+                        //remove old marker when position changes
                         m.remove();
                     }
-
-
                 }
 
-
-                Marker marker = mMap.addMarker(new MarkerOptions().position(newUserLoc).title(localUserID + " " + localUsername));
+                marker = mMap.addMarker(new MarkerOptions().position(newUserLoc).title(localUserID + " " + localUsername));
                 marker.setIcon(BitmapDescriptorFactory.fromResource(com.isuri.ambulancetracker.apptracker.R.drawable.markerbusicon));
                 list.add(marker);
+                mMap.setOnMapLongClickListener(new GoogleMap.OnMapLongClickListener() {
+
+                    @Override
+                    public void onMapLongClick(LatLng latLng) {
+                        for (final Marker m : list) {
+                            if (Math.abs(m.getPosition().latitude - latLng.latitude) < 0.05 && Math.abs(m.getPosition().longitude - latLng.longitude) < 0.05) {
+
+                                new AlertDialog.Builder(MapsActivity.this)
+                                        .setTitle("Call")
+                                        .setMessage("Service: " + marker.getTitle())
+                                        .setIcon(android.R.drawable.ic_dialog_alert)
+                                        .setPositiveButton(R.string.callButton, new DialogInterface.OnClickListener() {
+
+                                            public void onClick(DialogInterface dialog, int whichButton) {
+
+                                                String callNumber = marker.getTitle().substring(marker.getTitle().lastIndexOf("/") + 1, marker.getTitle().lastIndexOf("]")).trim();
+
+                                                Intent intent = new Intent(Intent.ACTION_CALL, Uri.fromParts("tel", callNumber, null));
+
+                                                if (ActivityCompat.checkSelfPermission(MapsActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                                                    // TODO: Consider calling
+                                                    //    ActivityCompat#requestPermissions
+                                                    // here to request the missing permissions, and then overriding
+                                                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                                                    //                                          int[] grantResults)
+                                                    // to handle the case where the user grants the permission. See the documentation
+                                                    // for ActivityCompat#requestPermissions for more details.
+                                                    return;
+                                                }
+                                                startActivity(intent);
+
+                                            }
+                                        })
+                                        .setNegativeButton(android.R.string.no, null).show();
+
+                                break;
+                            }
+                        }
+
+                    }
+                });
 
 
             }
         });
 
     }
-
+//
+//    @Override
+//    public boolean onMarkerClick(final Marker markerClicked) {
+//
+//        if (markerClicked.equals(marker))
+//        {
+//            //handle click here
+//            tvDetails.setText("call "+marker.getTitle());
+//        }
+//        return false;
+//    }
 
     /**
      * Manipulates the map once available.
@@ -263,21 +266,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-//        LatLng sydney = new LatLng(6.927079,79.861244);
-//        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-//        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
-        // Add a marker in Sydney and move the camera
-//        LatLng sydney = new LatLng(-34, 151);
-//        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-//        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-
-//        mMap.setMyLocationEnabled(true);
-//
-//
-//        LatLng myLoc = new LatLng(mLastLocation.getLatitude(),mLastLocation.getLongitude());
-//        mMap.addMarker(new MarkerOptions().position(myLoc).title(userName));
-//        mMap.moveCamera(CameraUpdateFactory.newLatLng(myLoc));
     }
 
     @Override
@@ -287,12 +276,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             userLongitude = location.getLongitude() + "";
 
             jsonObject = "{ \"userLocation\" :{\"UserID\":\"" + userID + "\",\"Username\":\"" + userName + "\",\"userLatitude\":\"" + userLatitude + "\",\"userLongitude\":\"" + userLongitude + "\"} }";
-
-
-//        TextView asdas = (TextView) findViewById(R.id.textView);
-//                // yes, each time!
-//        asdas.setText(jsonObject);
-
 
             Callback callback = new Callback() {
                 public void successCallback(String channel, Object response) {
@@ -340,7 +323,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             //                                          int[] grantResults)
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
-            Toast.makeText(this, "error perm 2", Toast.LENGTH_LONG);
+            Toast.makeText(this, "Error! restart the app", Toast.LENGTH_LONG);
             return;
         }
         mLastLocation = LocationServices.FusedLocationApi.getLastLocation(
@@ -348,14 +331,14 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         if (mLastLocation != null) {
             //tvLatlong.setText("Latitude: "+ String.valueOf(mLastLocation.getLatitude())+"Longitude: "+
-                   // String.valueOf(mLastLocation.getLongitude()));
+            // String.valueOf(mLastLocation.getLongitude()));
 
             mMap.setMyLocationEnabled(true);
 
 
-            LatLng myLoc = new LatLng(mLastLocation.getLatitude(),mLastLocation.getLongitude());
+            LatLng myLoc = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
 
-            if(!passenger) { //if user logged in as a passenger this code block will skip
+            if (!passenger) { //if user logged in as a passenger this code block will skip
                 Marker m = mMap.addMarker(new MarkerOptions().position(myLoc).title(userID + " " + userName));
                 m.showInfoWindow();
                 m.setIcon(BitmapDescriptorFactory.fromResource(com.isuri.ambulancetracker.apptracker.R.drawable.markerbusicon));
@@ -392,5 +375,4 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .addApi(LocationServices.API)
                 .build();
     }
-
 }
