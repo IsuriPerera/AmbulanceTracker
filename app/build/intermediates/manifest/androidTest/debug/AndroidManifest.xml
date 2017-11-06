@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.isuri.ambulancetracker.apptracker.test">
+    package="com.isuri.ambulancetracker.apptracker.test" >
 
-    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="25" />
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <instrumentation
+        android:name="com.android.test.runner.MultiDexTestRunner"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for com.isuri.ambulancetracker.apptracker"
+        android:targetPackage="com.isuri.ambulancetracker.apptracker" />
 
     <application>
         <uses-library android:name="android.test.runner" />
     </application>
 
-    <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.isuri.ambulancetracker.apptracker"
-                     android:handleProfiling="false"
-                     android:functionalTest="false"
-                     android:label="Tests for com.isuri.ambulancetracker.apptracker"/>
 </manifest>

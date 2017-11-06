@@ -65,7 +65,7 @@
         android:layout_alignLeft="@+id/busdesctxt"
         android:layout_alignStart="@+id/busdesctxt"
         android:hint="@string/ambulancetelephonetxt"
-        android:digits="123456789+"
+        android:digits="0123456789+"
         android:inputType="phone"
         android:textColor="#e1e1e1"
         android:textColorHint="#818080"
