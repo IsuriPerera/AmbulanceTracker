@@ -17,10 +17,10 @@ public class InternetChecker {
         if (activeNetwork != null) { // connected to the internet
             if (activeNetwork.getType() == ConnectivityManager.TYPE_WIFI) {
                 // connected to wifi
-                Toast.makeText(activity, activeNetwork.getTypeName(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(activity, activeNetwork.getTypeName() + " - Please Wait..!", Toast.LENGTH_SHORT).show();
             } else if (activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE) {
                 // connected to the mobile provider's data plan
-                Toast.makeText(activity, activeNetwork.getTypeName(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(activity, activeNetwork.getTypeName() + " - Please Wait..!", Toast.LENGTH_SHORT).show();
             }
             return true;
         } else {// not connected to the internet
