@@ -7,7 +7,7 @@ import android.net.NetworkInfo;
 import android.widget.Toast;
 
 /**
- * Created by Samintha on 2016-10-09.
+ * Created by Isuri on 2017-10-19.
  */
 public class InternetChecker {
 
